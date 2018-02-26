@@ -25,6 +25,7 @@ you can add package source either by :
 2. Define the typed http client e.g. `ValuesClient` and the example message handler `OutboundLoggingHandler` 
 
 3. Register the http client and add the message handler to it 
+
         ```
          services
                 .AddHttpClient<ValuesClient>()
