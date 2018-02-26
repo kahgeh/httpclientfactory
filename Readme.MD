@@ -26,10 +26,8 @@ you can add package source either by :
 
 3. Register the http client and add the message handler to it 
 
-        ```
          services
                 .AddHttpClient<ValuesClient>()
                 .AddHttpMessageHandler(sp=>{
                     return sp.GetService<OutboundLoggingHandler>();
                 })
-        ```
